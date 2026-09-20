@@ -1,0 +1,17 @@
+# Node.js dependencies
+node_modules/
+# Backend code (not needed in test repo)
+Server/
+# Premium source files (keep private, only upload .enc blobs)
+Premium/
+.vscode/
+# OS/system files
+.DS_Store
+Thumbs.db
+package-lock.json
+package.json
+encrypt-main.js
+# Environment variables
+.env
+.hintrc
+TO DO
