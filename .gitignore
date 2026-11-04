@@ -10,8 +10,10 @@ Premium/
 Thumbs.db
 package-lock.json
 package.json
-encrypt-main.js
-# Environment variables
+# Ohter
 .env
 .hintrc
 TO DO
+premium-meta.json
+test.js
+encrypt.js

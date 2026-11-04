@@ -110,6 +110,9 @@ figcaption {
     font-size: 0.9rem;
     color: #027;
 }
+img.unlock {
+    height: 3rem;
+}
 
 /* Class and ID */
 
@@ -137,6 +140,17 @@ figcaption {
     align-items: start;
 }
 .bgr {font-size: larger;}
+.fade-text {
+  /* Establish a solid height or max-height where the fade should happen */
+  max-height: 150px; 
+  overflow: hidden;
+  
+  /* The mask fades the text from fully opaque to fully transparent */
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+
 
 #two_column {
     display: flex;  /* number of columns */
@@ -443,6 +457,10 @@ nav a:hover {
 }
 nav a:active {
     text-decoration: underline;
+}
+a.premium {
+    display: block;
+    margin: 3rem auto;
 }
 
 /* FoS */

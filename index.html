@@ -10,11 +10,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
-    <!-- <script src="https://accounts.google.com/gsi/client" async></script> -->
+    <script src="https://accounts.google.com/gsi/client" async></script>
 
     <title>Index</title>
 
-<!-- <script>
+<script>
         if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js')
         .then (serviceWorker => {
@@ -39,7 +39,7 @@ async function handleCredentialResponse(response) {
     console.error("Login failed:", err);
   }
 }
-</script> -->
+</script>
 
 </head>
   
@@ -598,25 +598,29 @@ async function handleCredentialResponse(response) {
 </main> 
 
 <footer>
-<nav>
-    <div id="g_id_onload"
-     data-client_id="522809989543-tq219q3f03i03pg3qdci6n5khgtksif6.apps.googleusercontent.com"
-     data-context="signin"
-     data-ux_mode="popup"
-     data-callback="handleCredentialResponse"
-     data-auto_select="false"
-     data-itp_support="true">
-</div>
 
-<div class="g_id_signin"
-     data-type="standard"
-     data-shape="rectangular"
-     data-theme="filled_blue"
-     data-text="signin_with"
-     data-size="large"
-     data-logo_alignment="left">
-</div>   
+<nav id="unlock">
+    
+    <div id="g_id_onload"
+        data-client_id="522809989543-tq219q3f03i03pg3qdci6n5khgtksif6.apps.googleusercontent.com"
+        data-context="signin"
+        data-ux_mode="popup"
+        data-callback="handleCredentialResponse"
+        data-auto_select="false"
+        data-itp_support="true">
+    </div>
+
+    <div class="g_id_signin"
+        data-type="standard"
+        data-shape="rectangular"
+        data-theme="filled_blue"
+        data-text="signin_with"
+        data-size="large"
+        data-logo_alignment="left">
+    </div>  
+
 </nav>
+
 </footer> 
 
    <!-- <div>
