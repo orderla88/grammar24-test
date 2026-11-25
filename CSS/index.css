@@ -91,7 +91,7 @@ main, header, footer {
     margin: 0;
 }
 h1 {font-size: 2.5rem;
-    color: darkred;
+    color: #720000;
     font-weight: bold;
 }
 
@@ -132,7 +132,7 @@ sup {
     position: relative;
     vertical-align: baseline;
     top: -0.6rem;
-    color: darkred;
+    color: #720000;
 }
 
 /* Details */
@@ -209,7 +209,7 @@ a { font-size: 1.3rem;
     -webkit-tap-highlight-color: transparent; 
     outline: none;
 }
-a:hover {color: darkred;}
+a:hover {color: #720000;}
 a:active {text-decoration: underline;
         text-decoration-style: dotted;
 }
@@ -236,12 +236,15 @@ section#index a {
 }
 section#index a:hover {
     transform: scale(1.04);
-    color: darkred;    
+    color: #720000;    
 }
 section#index a:active {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
+
+.blue {color: #013;}
+.red {color: #720000;}
 
 /* Glossary */
 #d_index {

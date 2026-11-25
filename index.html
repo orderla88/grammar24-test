@@ -24,15 +24,16 @@
     });
 }
 
+const API_BASE = "https://grammar24-backend-service-522809989543.us-central1.run.app";
 async function handleCredentialResponse(response) {
   const jwt = response.credential;
   try {
-    const res = await fetch("http://localhost:3000/auth/google", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-      body: JSON.stringify({ credential: jwt })
-    });
+    const res = await fetch(`${API_BASE}/auth/google`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({ credential: jwt })
+});
     const data = await res.json();
     console.log("Login result:", data);
   } catch (err) {
@@ -46,7 +47,7 @@ async function handleCredentialResponse(response) {
 <body>                
 
 <header> 
-    <h1>Grammar 24</h1>
+    <h1><span class="blue">Grammar</span> 24</h1>
 </header> 
 
 <main id="narrow">
