@@ -11,18 +11,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
     <script src="https://accounts.google.com/gsi/client" async></script>
-
+    <!-- <script src="JS/index.js"></script> -->
     <title>Index</title>
 
 <script>
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
-        .then (serviceWorker => {
-            console.log("Service Worker is registered:", serviceWorker);
-        })
-        .catch (error=> {console.error("Error in Service Worker registration:", error);
-    });
-}
+//         if ('serviceWorker' in navigator) {
+//         navigator.serviceWorker.register('/sw.js')
+//         .then (serviceWorker => {
+//             console.log("Service Worker is registered:", serviceWorker);
+//         })
+//         .catch (error=> {console.error("Error in Service Worker registration:", error);
+//     });
+// }
 
 const API_BASE = "https://grammar24-backend-service-522809989543.us-central1.run.app";
 async function handleCredentialResponse(response) {
@@ -35,6 +35,7 @@ async function handleCredentialResponse(response) {
     body: JSON.stringify({ credential: jwt })
 });
     const data = await res.json();
+    if (data.success && data.token) {localStorage.setItem("jwt", data.token);}
     console.log("Login result:", data);
   } catch (err) {
     console.error("Login failed:", err);
