@@ -104,6 +104,7 @@ img {
     max-width: 100%;
     height: auto;
     margin: 1.2rem auto 0.5rem auto;
+
 }
 figcaption {
     text-align: center;
@@ -111,7 +112,8 @@ figcaption {
     color: #027;
 }
 img.unlock {
-    height: 3rem;
+    height: 7rem;
+    /* box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1); */
 }
 
 /* Class and ID */
@@ -144,7 +146,6 @@ img.unlock {
   /* Establish a solid height or max-height where the fade should happen */
   max-height: 150px; 
   overflow: hidden;
-  
   /* The mask fades the text from fully opaque to fully transparent */
   -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 60%, transparent 100%);

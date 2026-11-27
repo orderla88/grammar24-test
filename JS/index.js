@@ -10,7 +10,7 @@ async function backgroundInit() {
   }
 
   // Fetch one premium .enc file (e.g., glossary)
-  const res = await fetch("/Premium-enc/glossary.enc");
+  const res = await fetch("/Premium-enc/sentence_1.enc");
   if (!res.ok) {
     console.warn("Could not check key version");
     return;
